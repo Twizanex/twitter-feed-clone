@@ -1,0 +1,100 @@
+body, input, button {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2A2A2A;
+  background-image: url(https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_bgs.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  height: 40px;
+}
+header .wrapper {
+  width: 865px;
+  margin: 0 auto;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  height: 40px;
+  text-align: center;
+  display: inline-block;
+  list-style: none;
+}
+nav li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+nav li a {
+  color: #bbb;
+}
+nav li a:hover {
+  color: white;
+}
+nav li a.current-page {
+  color: white;
+  background-image: url(https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_bgs.png);
+  background-position: 0 -50px;
+  background-repeat: repeat-x;
+}
+nav li a .nav-name {
+  font-size: 12px;
+  font-weight: bold;
+  color: inherit;
+  position: relative;
+  float: left;
+  padding: 12px 0 13px;
+}
+nav .nav-icon {
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 22px;
+  display: block;
+  position: relative;
+  float: left;
+  margin: 9px 6px 0 12px;
+}
+nav #home {
+  width: 85px;
+}
+nav #home .nav-icon {
+  background-image: url(https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_icons.png);
+  background-position: 0px -110px;
+}
+nav #connect {
+  width: 99px;
+}
+nav #connect .nav-icon {
+  background-image: url(https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_icons.png);
+  background-position: -80px -50px;
+}
+nav #connect .hover {
+  background-position: -80px -80px;
+}
+nav #discover {
+  width: 97px;
+}
+nav #discover .nav-icon {
+  background-image: url(https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_icons.png);
+  background-position: -40px -50px;
+}
+nav #discover .hover {
+  background-position: -40px -80px;
+}
+nav #me {
+  width: 69px;
+}
+nav #me .nav-icon {
+  background-image: url(https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_icons.png);
+  background-position: -120px -50px;
+}
+nav #me .hover {
+  background-position: -120px -80px;
+}
