@@ -6,8 +6,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #2A2A2A;
-  background-image: url(https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_bgs.png);
+  background-image: url(twitter_web_sprite_bgs.png);
   background-position: 0px 0px;
   background-repeat: repeat-x;
   height: 40px;
@@ -17,11 +16,13 @@ header .wrapper {
   margin: 0 auto;
 }
 nav {
+  height: 40px;
   float: left;
 }
 nav ul {
   margin: 0;
   padding: 0;
+  height: 40px;
 }
 nav li {
   height: 40px;
@@ -43,7 +44,7 @@ nav li a:hover {
 }
 nav li a.current-page {
   color: white;
-  background-image: url(https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_bgs.png);
+  background-image: url(twitter_web_sprite_bgs.png);
   background-position: 0 -50px;
   background-repeat: repeat-x;
 }
@@ -68,14 +69,14 @@ nav #home {
   width: 85px;
 }
 nav #home .nav-icon {
-  background-image: url(https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_icons.png);
+  background-image: url(twitter_web_sprite_icons.png);
   background-position: 0px -110px;
 }
 nav #connect {
   width: 99px;
 }
 nav #connect .nav-icon {
-  background-image: url(https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_icons.png);
+  background-image: url(twitter_web_sprite_icons.png);
   background-position: -80px -50px;
 }
 nav #connect .hover {
@@ -85,7 +86,7 @@ nav #discover {
   width: 97px;
 }
 nav #discover .nav-icon {
-  background-image: url(https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_icons.png);
+  background-image: url(twitter_web_sprite_icons.png);
   background-position: -40px -50px;
 }
 nav #discover .hover {
@@ -95,24 +96,31 @@ nav #me {
   width: 69px;
 }
 nav #me .nav-icon {
-  background-image: url(https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_icons.png);
+  background-image: url(twitter_web_sprite_icons.png);
   background-position: -120px -50px;
+  background-repeat: no-repeat;
 }
 nav #me .hover {
   background-position: -120px -80px;
 }
+
 header #icon {
   float: left;
-  text-align: center;
+  margin: 10px 0 0 92px;
+  color: white;
+  background-image: url(twitter_web_sprite_icons.png);
+  background-position: -40px 0;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 21px;
+  display: block;
 }
+
 header #actions {
   float: right;
 }
-header #actions div {
-  height: 40px;
-  display: inline-block;
-}
 header #actions #search {
+  float: left;
   position: relative;
   margin-top: 7px;
   font-size: 12px;
@@ -123,7 +131,7 @@ header #actions #search {
   border: none;
   background-color: #ccc;
 }
-header #search input {
+header #actions #search input {
   position: absolute;
   top: 0;
   left: 0;
@@ -143,12 +151,13 @@ header #search input {
   transition-duration: 0.2s;
   transition-timing-function: linear;
 }
-header #search input:focus {
+header #actions #search input:focus {
   background-color: white;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
+/* Webkit */
 input::-webkit-input-placeholder {
     color: #666;
 }
@@ -188,10 +197,64 @@ header #search-icon {
   top: 0;
   right: 0;
   margin: 5px 9px 0 7px;
-  background-image: url(https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_icons.png);
+  background-image: url(twitter_web_sprite_icons.png);
   background-position: -20px -710px;
   background-repeat: no-repeat;
 }
 header #search-button {
-  visibility: hidden;
+  display: none;
+}
+header #actions .divider {
+  float: left;
+  margin: 3px 10px 5px;
+  padding: 0;
+  background-image: url(twitter_web_sprite_icons.png);
+  background-position: -240px -50px;
+  background-repeat: no-repeat;
+  width: 2px;
+  height: 32px;
+}
+header #actions #settings {
+  float: left;
+  width: 34px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+header #actions #settings a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+header #actions #settings .settings-icon {
+  background-image: url(twitter_web_sprite_icons.png);
+  background-position: -160px -50px;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 21px;
+  margin: 9px 2px 11px 0px;
+  display: inline-block;
+}
+header #actions #settings .hover-icon {
+  background-position: -160px -80px;
+}
+header #actions #settings .settings-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 18px 0 0 0;
+  border-top: 4px solid #bbb;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: none;
+  vertical-align: top;
+}
+header #actions #settings .hover-caret {
+  border-top: 4px solid white;
+}
+header #actions #compose {
+  float: left;
 }
