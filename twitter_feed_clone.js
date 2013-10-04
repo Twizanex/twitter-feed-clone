@@ -8,4 +8,5 @@ function prepareNavHandler() {
 
 $(function() {
   prepareNavHandler();
+  prepareSearchHandler();
 });

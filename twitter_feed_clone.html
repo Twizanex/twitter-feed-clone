@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Twitter</title>
@@ -37,21 +37,24 @@
           </ul>
         </nav>
         <div id="icon">
-          <span class="etched-bird"></span>
+          <span class="etched-bird">Twitter</span>
         </div>
-        <div id="search">
-          <form action='#'>
-            <input placeholder="Search"></input>
-            <button id="seach-icon">Search</button>
-          </form>
-        </div>
-        <div class="divider">|</div>
-        <div id="settings">
-          <a href="#">Settings</a>
-        </div>
-        <div class="divider">|</div>
-        <div id="compose">
-          <a href="#">Compose</a>
+        <div id="actions">
+          <div id="search">
+            <form action='#'>
+              <input placeholder="Search"></input>
+              <span id="search-icon"></span>
+              <button type="submit" id="search-button">Search</button>
+            </form>
+          </div>
+          <div class="divider">|</div>
+          <div id="settings">
+            <a href="#">Settings</a>
+          </div>
+          <div class="divider">|</div>
+          <div id="compose">
+            <a href="#">Compose</a>
+          </div>
         </div>
       </div>
     </header>
