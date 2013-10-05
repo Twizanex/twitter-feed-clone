@@ -230,6 +230,7 @@ header #actions #settings a {
   display: block;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 header #actions #settings .settings-icon {
   background-image: url(twitter_web_sprite_icons.png);
